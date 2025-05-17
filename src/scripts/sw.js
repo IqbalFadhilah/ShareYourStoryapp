@@ -20,12 +20,13 @@ self.addEventListener('push', (event) => {
 
 const CACHE_NAME = 'story-app-v1';
 const APP_SHELL = [
-  '/',
-  '/index.html',
-  '/app.bundle.js',
-  '/app.css',
-  '/app.webmanifest',
-  '/images/logo.png',
+  '/ShareYourStoryapp/',
+  '/ShareYourStoryapp/index.html',
+  '/ShareYourStoryapp/app.css',
+  '/ShareYourStoryapp/app.bundle.js',
+  '/ShareYourStoryapp/app.webmanifest',
+  '/ShareYourStoryapp/images/logo.png',
+  '/ShareYourStoryapp/images/logo-bookmark.png',
 ];
 
 self.addEventListener('install', (event) => {
