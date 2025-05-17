@@ -58,11 +58,9 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   event.respondWith(
     caches.match(event.request).then((cachedResponse) => {
-      // Return cached response if found, otherwise fetch from network
       return cachedResponse || fetch(event.request).catch(() => {
-        // Fallback kalau offline dan request gagal
         if (event.request.destination === 'document') {
-          return caches.match('/'); // fallback ke halaman utama
+          return caches.match('/'); 
         }
       });
     })

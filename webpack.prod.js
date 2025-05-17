@@ -6,7 +6,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 module.exports = merge(common, {
   mode: 'production',
   output: {
-    publicPath: '/', // Kembalikan ke root
+    publicPath: '/',
   },
   module: {
     rules: [

@@ -43,7 +43,7 @@ async function initApp() {
     }
   })
 
-  setupPushToggleButton() // initial setup
+  setupPushToggleButton() 
 }
 
 function updateNavbar() {
@@ -79,8 +79,6 @@ function updateNavbar() {
         <li><button id="logout-btn">Logout</button></li>
       </div>
     `
-
-
     document.getElementById('logout-btn')?.addEventListener('click', e => {
       e.preventDefault()
       localStorage.removeItem('token')
@@ -96,7 +94,6 @@ function updateNavbar() {
   }
 }
 
-// ⬇️ Tambahkan fungsi ini di bawah semuanya
 async function setupPushToggleButton() {
   const btn = document.getElementById('subscribe-btn')
   if (!btn || !('serviceWorker' in navigator)) return
