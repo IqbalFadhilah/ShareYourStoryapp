@@ -2,6 +2,7 @@
   "name": "Share Your Story",
   "short_name": "StoryApp",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2196f3",
